@@ -1,0 +1,61 @@
+.CustemDesign {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.previewTshirt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:nth-child(1) {
+  width: 50px;
+  transform: rotate(180deg);
+}
+.btn {
+  width: 50px;
+  cursor: pointer;
+}
+.dropZoneArea {
+  h1 {
+    margin-bottom: 20px;
+  }
+  .size {
+    margin-top: 20px;
+    display: flex;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      width: 22px;
+      height: 22px;
+      padding: 10px;
+      background: #767676;
+      border-radius: 10px;
+      margin: 0px 10px;
+      cursor: pointer;
+
+      &:hover {
+        background: #ababab;
+      }
+    }
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #000;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+}
