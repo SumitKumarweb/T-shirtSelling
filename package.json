@@ -14,7 +14,8 @@
     "react-dom": "^18.2.0",
     "react-drag-drop-files": "^2.3.10",
     "react-dropzone": "^14.2.3",
-    "react-image-crop": "^10.1.5"
+    "react-image-crop": "^10.1.5",
+    "react-medium-image-zoom": "^5.1.8"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

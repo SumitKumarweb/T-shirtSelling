@@ -4,20 +4,30 @@ import back from './back.png'
 import { useState } from "react";
 import rightArrow from './arrow-right-solid.svg'
 import shoppingCart from './shophingCart.svg'
-
+import React, { useCallback } from 'react'
+import { Controlled as ControlledZoom } from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 function CustemDesign() {
     const [preivew, setPreview] = useState(true);
+    const [isZoomed, setIsZoomed] = useState(false)
+
+    const handleZoomChange = useCallback(shouldZoom => {
+        setIsZoomed(shouldZoom)
+    }, [])
+
     return (
         <div className="CustemDesign">
             <div className="previewTshirt">
                 <img src={rightArrow} className="btn" onClick={() => setPreview(!preivew)} />
-                {
-                    preivew ?
-                        (<img src={front} alt="" />)
-                        :
-                        (<img src={back} alt="" />)
-                }
+                <ControlledZoom isZoomed={isZoomed} onZoomChange={handleZoomChange}>
+                    {
+                        (preivew) ?
+                            (<img src={front} alt="" />)
+                            :
+                            (<img src={back} alt="" />)
+                    }
+                </ControlledZoom>
                 <img src={rightArrow} className="btn" onClick={() => setPreview(!preivew)} />
             </div>
             <div className="dropZoneArea">
