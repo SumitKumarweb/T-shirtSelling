@@ -1,0 +1,76 @@
+.block {
+  display: none;
+}
+
+.cart > img {
+  width: 200px;
+}
+
+.cart {
+  cursor: pointer;
+  margin: 30px 28px 0px 0px;
+  width: 200px;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.flex_product {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cartbrandname {
+  font-size: 0.8rem;
+  color: #faa8a8;
+  margin: 10px 0px;
+}
+
+.brandwearname {
+  color: #5e3333;
+  font-size: 0.9em;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.cart > .flex {
+  margin-bottom: 10px;
+}
+
+.cartPrice > span {
+  font-weight: 900;
+}
+
+.cartPrice > span > del {
+  font-weight: 100;
+  font-size: 0.9rem;
+  color: #7a7979;
+}
+
+.cart:hover > .block {
+  display: inline;
+}
+
+.cart:hover {
+  box-shadow: 0px 0px 10px 0px rgb(158, 105, 105);
+}
+
+.cart:hover > img + .unblock {
+  display: none;
+}
+
+.cart {
+  background: white;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.star {
+  width: 12px;
+}/*# sourceMappingURL=Card.css.map */
