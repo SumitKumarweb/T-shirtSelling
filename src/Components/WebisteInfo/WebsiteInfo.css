@@ -1,0 +1,19 @@
+.WebsiteInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+}
+.detail img {
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=WebsiteInfo.css.map */

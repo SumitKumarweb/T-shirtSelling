@@ -6,6 +6,7 @@
 }
 
 .previewTshirt {
+  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,6 +22,9 @@
   cursor: pointer;
 }
 
+.dropZoneArea {
+  z-index: -1;
+}
 .dropZoneArea h1 {
   margin-bottom: 20px;
 }
@@ -57,4 +61,19 @@
 }
 .dropZoneArea button img {
   margin-right: 10px;
+}
+
+.noOfOrder {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.noOfOrder div {
+  font-size: xx-large;
+  margin: 20px;
+}
+.noOfOrder button {
+  width: 50px;
+  height: 50px;
+  padding-right: 15px;
 }/*# sourceMappingURL=CustemDesign.css.map */

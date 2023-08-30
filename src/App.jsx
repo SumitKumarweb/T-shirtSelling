@@ -3,6 +3,7 @@ import Banner from './Components/Banner/Banner'
 import Cards from './Components/Cards/Cards'
 import CustemDesign from './Components/CustemDesign/CustemDesign'
 import Navbar from './Components/NavBar/Navbar'
+import WebsiteInfo from './Components/WebisteInfo/WebsiteInfo'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Banner/>
     <Cards/>
     <CustemDesign/>
+    <WebsiteInfo/>  
    </>
   )
 }
